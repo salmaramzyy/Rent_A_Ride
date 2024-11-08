@@ -16,9 +16,10 @@ This project aims to build a responsive car rental website where users can speci
 - **Sprint Planning**: We conduct 1-week sprints with weekly planning sessions.
 - **Sprint Backlogs**: Each sprint backlog includes tasks related to user stories from the product backlog, which are tracked in our GitHub Project board.
 - **Scrum Roles**:
-  - Scrum Master: Dana Amr
+  - Scrum Master: Joumana Mohamed
   - Product Owner: Salma Wael
   - Development Team: All team members
 
 ## GitHub Project Board
-[Link to Project Board]
+https://github.com/users/salmaramzyy/projects/1/views/1
+

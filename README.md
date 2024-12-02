@@ -92,3 +92,6 @@ The project incorporates user authentication, car listings, and rental managemen
    pip install flask
    pip install flask-mysqldb
    pip install bcrypt
+2. **Run the code**:
+   ```bash
+   python app.py

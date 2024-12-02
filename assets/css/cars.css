@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f7;
+    color: #2c3e50;
+  }
+  
+  /* Header Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar h1 {
+    font-size: 1.5rem;
+    color: #1e88e5;
+  }
+  .search-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .search-form input {
+    padding: 0.6rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 250px;
+    outline: none;
+  }
+  .search-form button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .search-form button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Main Container */
+  .cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    justify-content: center;
+  }
+  /* Car Card */
+  .car-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  .car-image-frame {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .car-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .car-details {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .car-details h2 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+    color: #34495e;
+  }
+  .car-details p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0.5rem 0;
+  }
+  .car-details p strong {
+    color: #2c3e50;
+  }
+  .car-details button {
+    margin-top: 1rem;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .car-details button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* No Results Styling */
+  .no-results {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #b0bec5;
+    margin-top: 2rem;
+  }
+  

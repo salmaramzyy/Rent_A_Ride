@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Cars</title>
+  <link rel="stylesheet" href="../assets/css/cars.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>🚗 Explore Our Cars</h1>
+    <form method="GET" action="/cars" class="search-form">
+      <input type="text" name="search" placeholder="Search by name or fuel type..." value="{{ search_query }}">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main>
+    <div class="cars-container">
+      {% if cars %}
+        {% for car in cars %}
+          <div class="car-card">
+            <div class="car-image-frame">
+              <img src="{{ car[8] }}" alt="{{ car[1] }}" class="car-image" onerror="this.src='/static/default-image.jpg';">
+            </div>
+            <div class="car-details">
+              <h2>{{ car[1] }}</h2>
+              <p><strong>Year:</strong> {{ car[2] }}</p>
+              <p><strong>Fuel Type:</strong> {{ car[4] }}</p>
+              <p><strong>Transmission:</strong> {{ car[6] }}</p>
+              <p><strong>Price/Day:</strong> EGP {{ car[7] }}</p>
+              <button>Rent Now</button>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="no-results">No cars found. Try a different search!</p>
+      {% endif %}
+    </div>
+  </main>
+  
+</body>
+</html>
